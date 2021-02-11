@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <FrameLayout
+       android:id="@+id/fragment_container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginBottom="120dp"/>
+
+   <Button
+       android:id="@+id/data_brn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBottom="@+id/fragment_container"
+       android:layout_alignParentEnd="true"
+       android:layout_marginEnd="270dp"
+       android:layout_marginBottom="-100dp"
+       android:text="Por data"
+       android:textColor="@color/white"
+       android:background="@color/purple_500" />
+
+   <Button
+       android:id="@+id/id_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBottom="@+id/fragment_container"
+       android:layout_alignParentEnd="true"
+       android:layout_marginEnd="30dp"
+       android:layout_marginBottom="-100dp"
+       android:text="Por id"
+       android:background="@color/purple_500"
+       android:textColor="@color/white"/>
+   <Button
+       android:id="@+id/last_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBottom="@+id/fragment_container"
+       android:layout_alignParentEnd="true"
+       android:layout_marginEnd="150dp"
+       android:layout_marginBottom="-100dp"
+       android:text="Ultimo"
+       android:background="@color/purple_500"
+       android:textColor="@color/white"/>
+   <EditText
+       android:id="@+id/data_tv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/data_brn"
+       android:layout_marginBottom="8dp"
+       android:layout_marginLeft="15dp"
+       android:hint="digite a data aqui mano"
+       android:textColor="@color/black"/>
+
+   <EditText
+       android:id="@+id/id_tv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/data_brn"
+       android:layout_marginBottom="8dp"
+       android:layout_marginLeft="275dp"
+       android:hint="digite o id"
+       android:textColor="@color/black"
+       android:inputType="number"
+      />
+
+</RelativeLayout>
